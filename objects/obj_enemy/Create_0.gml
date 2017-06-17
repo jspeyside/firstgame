@@ -1,3 +1,3 @@
 /// @description Enemy Setup
 hp = 5;
-//spd = 
+spd = 1.5;
