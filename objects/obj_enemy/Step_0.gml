@@ -9,4 +9,7 @@ image_angle = direction;
 // Destroy on 0 hp
 if (hp <= 0) {
 	instance_destroy();
+	with(obj_score) {
+		_score += 1;
+	}
 }
