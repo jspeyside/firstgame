@@ -1,17 +1,17 @@
 /// @description Movement/Shooting
 
 // Movement
-player_speed = 4
-if (keyboard_check(vk_right)) {
+player_speed = 4;
+if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
 	x += player_speed;
 }
-if(keyboard_check(vk_left)) {
+if(keyboard_check(vk_left) || keyboard_check(ord("A"))) {
 	x -= player_speed;
 }
-if(keyboard_check(vk_up)) {
+if(keyboard_check(vk_up) || keyboard_check(ord("W"))) {
 	y -= player_speed;
 }
-if(keyboard_check(vk_down)) {
+if(keyboard_check(vk_down) || keyboard_check(ord("S"))) {
 	y += player_speed;
 }
 
