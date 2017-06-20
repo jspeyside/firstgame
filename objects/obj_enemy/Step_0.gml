@@ -10,6 +10,8 @@ image_angle = direction;
 if (hp <= 0) {
 	instance_destroy();
 	with(obj_score) {
-		_score += 1;
+		_score += 5;
 	}
+	audio_sound_pitch(snd_death, random_range(0.8, 1.2));
+	audio_play_sound(snd_death, 0, false);
 }
